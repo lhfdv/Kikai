@@ -1,2 +1,2 @@
 # Kikai
-My studies
+My studies. Intended to track which languages I am using.
