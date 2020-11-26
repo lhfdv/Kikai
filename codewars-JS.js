@@ -4,6 +4,12 @@ function multiply(a, b){
   return res;
 }
 
+function solution(number){
+  var num=0, i;
+  for (i=1; i<number;i++){if(i%3===0 || i%5===0) {num+=i;}}
+  return num;
+}
+
 function numPrimorial(n){
   let times;
   let result = 0;
