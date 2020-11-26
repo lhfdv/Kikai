@@ -25,3 +25,13 @@ def next_happy_year(year):
             break
             
     return year
+
+
+
+def solution(number):
+    sum=0
+    i=1
+    for i in range(number):
+        if i%5==0 or i%3==0:
+            sum+=i
+    return sum
