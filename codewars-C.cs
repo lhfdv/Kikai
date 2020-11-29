@@ -50,3 +50,21 @@ public class Kata{
     } else { return 0; }
   }
 }
+
+
+
+using System.Linq;
+using System;
+
+public class Kata
+{
+  public static object FirstNonConsecutive(int[] arr)
+  {
+    for(int i=1; i<arr.Length; i++){
+      if(arr[i]-1 != arr[i-1]){
+        return arr[i];
+      }
+    }
+    return null;
+  }
+}
