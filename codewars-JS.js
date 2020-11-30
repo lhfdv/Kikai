@@ -10,6 +10,8 @@ function solution(number){
   return num;
 }
 
+
+
 function numPrimorial(n){
   let times;
   let result = 0;
@@ -21,6 +23,7 @@ function numPrimorial(n){
   let add;
   let lt;
   let timesc = 1;
+  
   
   
   for(times = 3; timesc<n; times++){
@@ -45,12 +48,16 @@ function numPrimorial(n){
   return x;
 }
 
+
+
 function getAverage(marks){
   var average = 0;
   for( var i = 0; i < marks.length; i++ ){ average += marks[i]; }
   average = average / marks.length
   return (Math.floor(average));
 }
+
+
 
 function minSum(arr) {
   let result=0;
@@ -76,6 +83,8 @@ function minSum(arr) {
   return result;
 }
 
+
+
 function consecutiveDucks(num) {
     let result;
     result = Math.log2(num);
@@ -85,6 +94,8 @@ function consecutiveDucks(num) {
       return true;
     }
 }
+
+
 
 function grader(score) {
     switch (true) {
@@ -108,6 +119,8 @@ function grader(score) {
     }
 }
 
+
+
 import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
 import org.junit.runners.JUnit4;
@@ -128,4 +141,10 @@ class Solution{
 
       return (Ints.toArray(Arr));
   }
+}
+
+
+
+function reverseWords(str){
+  return str.split(' ').reverse().join(' ');
 }
