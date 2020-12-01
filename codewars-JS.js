@@ -4,6 +4,8 @@ function multiply(a, b){
   return res;
 }
 
+
+
 function solution(number){
   var num=0, i;
   for (i=1; i<number;i++){if(i%3===0 || i%5===0) {num+=i;}}
@@ -23,8 +25,6 @@ function numPrimorial(n){
   let add;
   let lt;
   let timesc = 1;
-  
-  
   
   for(times = 3; timesc<n; times++){
     b = y;
@@ -148,3 +148,11 @@ class Solution{
 function reverseWords(str){
   return str.split(' ').reverse().join(' ');
 }
+
+
+
+function maxMultiple(divisor, bound){
+  let x = bound % divisor;
+  let n = bound - x;
+  return n;
+}  
