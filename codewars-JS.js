@@ -6,6 +6,17 @@ function multiply(a, b){
 
 
 
+const reverseSeq = n => {
+  let result = [];
+  for (let i = 1; i <= n; i++){
+    result.push(i)
+  }
+  result.reverse();
+  return result;
+};
+
+
+
 function solution(number){
   var num=0, i;
   for (i=1; i<number;i++){if(i%3===0 || i%5===0) {num+=i;}}
