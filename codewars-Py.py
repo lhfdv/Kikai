@@ -35,3 +35,8 @@ def solution(number):
         if i%5==0 or i%3==0:
             sum+=i
     return sum
+
+
+
+def multi_table(number):
+    return '\n'.join(f'{x} * {number} = {x*number}' for x in range (1,11))
