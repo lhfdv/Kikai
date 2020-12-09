@@ -7,6 +7,7 @@ def solve(arr):
 import math
 
 
+=============================================================
 
 def litres(time):
     result = time * 0.5
@@ -15,7 +16,8 @@ def litres(time):
 
     yesterday
     
-    
+
+=============================================================    
 
 def next_happy_year(year):
     while True:
@@ -27,6 +29,7 @@ def next_happy_year(year):
     return year
 
 
+=============================================================
 
 def solution(number):
     sum=0
@@ -37,16 +40,19 @@ def solution(number):
     return sum
 
 
+=============================================================
 
 def multi_table(number):
     return '\n'.join(f'{x} * {number} = {x*number}' for x in range (1,11))
 
 
+=============================================================
 
 def sum_square_even_root_odd(nums):
     return round( sum ( n** ( 0.5 if n % 2 else 2 ) for n in nums ), 2 )
 
 
+=============================================================
 
 def switch_it_up(number):
     if number == 1:
@@ -70,9 +76,16 @@ def switch_it_up(number):
     elif number == 9:
         return "Nine"
     
-    
+=============================================================
     
 import re
 def check_password(s):
     passwd = [r'[a-z]', r'[A-Z]', r'\d', r'[!@#$%^&*?]']
     return 'valid' if all([re.search(p, s) for p in passwd]) and not re.search(r'[^a-zA-Z\d!@#$%^&*?]', s) and 8 <= len(s) < 20 else 'not valid'
+
+=============================================================
+
+def gimme(input_array):
+    for i in input_array:
+        if i != max(input_array) and i != min(input_array):
+            return input_array.index(i)
