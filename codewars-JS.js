@@ -4,7 +4,7 @@ function multiply(a, b){
   return res;
 }
 
-
+================================================================
 
 const reverseSeq = n => {
   let result = [];
@@ -15,7 +15,7 @@ const reverseSeq = n => {
   return result;
 };
 
-
+================================================================
 
 function solution(number){
   var num=0, i;
@@ -23,7 +23,7 @@ function solution(number){
   return num;
 }
 
-
+================================================================
 
 function numPrimorial(n){
   let times;
@@ -59,7 +59,7 @@ function numPrimorial(n){
   return x;
 }
 
-
+================================================================
 
 function getAverage(marks){
   var average = 0;
@@ -68,7 +68,7 @@ function getAverage(marks){
   return (Math.floor(average));
 }
 
-
+================================================================
 
 function minSum(arr) {
   let result=0;
@@ -94,7 +94,7 @@ function minSum(arr) {
   return result;
 }
 
-
+================================================================
 
 function consecutiveDucks(num) {
     let result;
@@ -106,7 +106,7 @@ function consecutiveDucks(num) {
     }
 }
 
-
+================================================================
 
 function grader(score) {
     switch (true) {
@@ -130,7 +130,7 @@ function grader(score) {
     }
 }
 
-
+================================================================
 
 import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
@@ -154,13 +154,13 @@ class Solution{
   }
 }
 
-
+================================================================
 
 function reverseWords(str){
   return str.split(' ').reverse().join(' ');
 }
 
-
+================================================================
 
 function maxMultiple(divisor, bound){
   let x = bound % divisor;
@@ -168,7 +168,7 @@ function maxMultiple(divisor, bound){
   return n;
 }  
 
-
+================================================================
 
 function checkExam(array1, array2) {
 	let res = 0;
@@ -187,4 +187,22 @@ function checkExam(array1, array2) {
       return 0;
     }
         return res;
+}
+
+================================================================
+
+function solution(str){
+  let res = str;
+  if(!res){
+    return res = [];
+  } else{
+    var rg = /[a-z]/gi;
+    let arr = str.match(rg);
+    let len = arr.length
+    if(len % 2 != 0){
+      str += ('_');
+    }
+    res = str.match(/.{1,2}/g);
+    return res;
+  }
 }
