@@ -89,3 +89,8 @@ def gimme(input_array):
     for i in input_array:
         if i != max(input_array) and i != min(input_array):
             return input_array.index(i)
+
+=============================================================
+        
+def sum_array(a):
+    return sum(a)
