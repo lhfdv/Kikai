@@ -206,3 +206,20 @@ function solution(str){
     return res;
   }
 }
+
+================================================================
+
+function solve(a,b){
+  let array = [];
+  a.split('').forEach(el => {
+    if(!b.includes(el)){
+      array.push(el);
+      }
+    })
+  b.split('').forEach(el => {
+    if(!a.includes(el)){
+      array.push(el);
+    }
+  })
+  return array.join('');
+}
