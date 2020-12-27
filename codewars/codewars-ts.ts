@@ -22,3 +22,10 @@ export class Kata {
     return (str.match(/[aeiou]/g) || []).length;
   }
 }
+
+=========================================================
+
+export function overTheRoad(address: number, n: number):number {
+  let res = 2 * n + 1 - address;
+  return res;
+}
