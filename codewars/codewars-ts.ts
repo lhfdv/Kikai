@@ -29,3 +29,9 @@ export function overTheRoad(address: number, n: number):number {
   let res = 2 * n + 1 - address;
   return res;
 }
+
+=========================================================
+
+export function quarterOf(month: number): number {
+  return Math.ceil(month/3);
+}
