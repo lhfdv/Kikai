@@ -223,3 +223,9 @@ function solve(a,b){
   })
   return array.join('');
 }
+
+================================================================
+
+const rotateToMax = n => {
+  return n.toString().split('').sort((a,b)=>a<b).join('')*1
+}
