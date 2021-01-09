@@ -35,3 +35,9 @@ export function overTheRoad(address: number, n: number):number {
 export function quarterOf(month: number): number {
   return Math.ceil(month/3);
 }
+
+=========================================================
+
+export const booleanToString = (b:boolean):string => {
+  return String(b);
+};
