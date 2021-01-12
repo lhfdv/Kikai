@@ -229,3 +229,9 @@ function solve(a,b){
 const rotateToMax = n => {
   return n.toString().split('').sort((a,b)=>a<b).join('')*1
 }
+
+================================================================
+
+function iceBrickVolume(radius, bottleLength, rimLength){
+  return (bottleLength-rimLength)*radius*2*radius;
+}
