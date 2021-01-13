@@ -235,3 +235,13 @@ const rotateToMax = n => {
 function iceBrickVolume(radius, bottleLength, rimLength){
   return (bottleLength-rimLength)*radius*2*radius;
 }
+
+================================================================
+
+function sumOfMinimums(arr) {
+  let res = 0;
+  for (let i=0; i<arr.length; i++){
+    res += Math.min(...arr[i]);
+  }
+  return res;
+}
